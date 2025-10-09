@@ -41,3 +41,5 @@ func main() {
 	}
 	fmt.Println(res)
 }
+func main(){}
+
