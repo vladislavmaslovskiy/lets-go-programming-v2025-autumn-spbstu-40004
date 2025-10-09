@@ -32,6 +32,30 @@ func adjustTempurature(lowTempurature int, highTempurature int, askingTempuratur
 
 	return lowTempurature, highTempurature, nil
 }
+func processDepart(employeeAmount int, minTempurature int, maxTempurature int) {
+	var (
+		operation  string
+		askingTempurature int
+	)
+
+	lowTempurature := minTempurature
+	highTempurature := maxTempurature
+	for range employeeAmount {
+		_, err := fmt.Scanln(&operation, &askingTempurature)
+		if err != nil || askingTempurature < 15 || askingTempurature > 30 {
+			fmt.Println("Wrong employee input")
+
+			return
+		}
+		lowTempurature, highTempurature, err = adjustTemperature(lowTempurature, highTempurature, askingTempurature, operation)
+		if err != nil {
+			fmt.Println(err)
+
+			return
+		}
+		fmt.Println(lowTempurature)
+	}
+}
 
 func main()
 {}
