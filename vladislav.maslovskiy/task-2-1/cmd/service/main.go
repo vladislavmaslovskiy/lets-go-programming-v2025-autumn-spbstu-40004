@@ -57,5 +57,27 @@ func processDepart(employeeAmount int, minTempurature int, maxTempurature int) {
 	}
 }
 
-func main()
-{}
+func main() {
+	const (
+		minTempurature = 15
+		highTempurature = 30
+	)
+
+	var departmentAmount, employeeAmount int
+
+	_, err := fmt.Scanln(&departmentAmount)
+	if err != nil || departmentAmount < 1 || departmentAmount > 1000 {
+		fmt.Println("Wrong  department amount")
+
+		return
+	}
+	for range departmentAmount {
+		_, err = fmt.Scanln(&employeeAmount)
+		if err != nil || employeeAmount < 1 || employeeAmount > 1000 {
+			fmt.Println("Wrong employee amount")
+
+			return
+		}
+		processDepart(employeeAmount, minTempurature,highTempurature)
+	}
+}
