@@ -1,5 +1,6 @@
 package main
 
+
 import "fmt"
 
 func main() {
@@ -8,11 +9,17 @@ func main() {
 		operand                        string
 	)
 	_, err := fmt.Scanln(&firstNumber)
+func main(){
+  var firstNum, secondNum, result int
+	var operator string
+	_, err := fmt.Scanln(&firstNum)
 	if err != nil {
 		fmt.Println("Invalid first operand")
 		return
 	}
 	_, err = fmt.Scanln(&secondNumber)
+
+	_, err = fmt.Scanln(&secondNum)
 	if err != nil {
 		fmt.Println("Invalid second operand")
 		return
@@ -43,3 +50,9 @@ func main() {
 }
 func main(){}
 
+
+	_, err = fmt.Scanln(&operator)
+	if err != nil {
+		fmt.Println("Invalid operation")
+		return
+}
