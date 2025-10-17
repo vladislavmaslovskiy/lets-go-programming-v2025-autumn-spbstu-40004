@@ -46,4 +46,3 @@ func CreateMaxHeap(array []int) *MaxHeap {
 
 	return h
 }
-
