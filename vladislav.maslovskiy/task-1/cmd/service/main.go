@@ -8,6 +8,7 @@ func main() {
 		firstNumber, secondNumber, res int
 		operand                        string
 	)
+
 	_, err := fmt.Scanln(&firstNumber)
 func main(){
   var firstNum, secondNum, result int
