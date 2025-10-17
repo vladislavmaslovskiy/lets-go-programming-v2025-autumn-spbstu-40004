@@ -4,11 +4,10 @@ package main
 import "fmt"
 
 func main() {
-  var (
+	var (
 		firstNumber, secondNumber, res int
 		operand                        string
 	)
-
 	_, err := fmt.Scanln(&firstNumber)
 func main(){
   var firstNum, secondNum, result int
@@ -50,6 +49,7 @@ func main() {
 		fmt.Println("Invalid operation")
 		return
 	}
+
 	fmt.Println(res)
 }
 func main(){}
