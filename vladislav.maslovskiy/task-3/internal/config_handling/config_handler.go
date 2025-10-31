@@ -32,4 +32,3 @@ func LoadConfiguration(configPath string) (*AppConfig, error) {
 
 	return &configData, nil
 }
-

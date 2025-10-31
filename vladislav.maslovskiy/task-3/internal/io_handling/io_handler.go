@@ -47,4 +47,3 @@ func WriteDataToFile(filePath string, content []byte) error {
 		return nil
 	}
 }
-
