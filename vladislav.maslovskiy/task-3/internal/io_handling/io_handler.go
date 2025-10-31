@@ -1,4 +1,4 @@
-package io_handling
+package iohandling
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package config_handling
+package confighandling
 
 import (
 	"errors"
