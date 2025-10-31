@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var firstNum, secondNum, result int
-	var operator                    string
+	var operator string
 
 	_, err := fmt.Scanln(&firstNum)
 	if err != nil {
