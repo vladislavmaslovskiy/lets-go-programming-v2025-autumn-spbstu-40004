@@ -1,4 +1,4 @@
-package  xml_handling
+package xml_handling
 
 import (
 	"encoding/xml"
@@ -66,4 +66,3 @@ func ParseXML(filePath string) ([]Currency, error) {
 
 	return currencySlice, nil
 }
-
