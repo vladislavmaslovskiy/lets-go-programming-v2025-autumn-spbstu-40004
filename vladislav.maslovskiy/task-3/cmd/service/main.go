@@ -35,7 +35,7 @@ func main() {
 		panic(configFlagPanicMessage)
 	}
 
-	settings, err := configHandler.LoadConfig(configPath)
+	settings, err := configHandler.LoadConfiguration(configPath)
 	if err != nil {
 		panic(err.Error())
 	}
@@ -54,8 +54,9 @@ func main() {
 		panic(err.Error())
 	}
 
-	err = ioHandler.WriteStringToFile(settings.OutputFile, jsonData)
+	err = ioHandler.WriteDataToFile(settings.OutputFile, jsonData)
 	if err != nil {
 		panic(err.Error())
 	}
 }
+
