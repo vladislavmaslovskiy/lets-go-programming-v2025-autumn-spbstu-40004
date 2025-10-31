@@ -1,4 +1,4 @@
-package xml_handling
+package xmlhandling
 
 import (
 	"encoding/xml"
